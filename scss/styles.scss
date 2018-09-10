@@ -1,0 +1,31 @@
+/*
+Name: MPhone Landing Page
+URI: #
+Author: Tripath Vietnam
+Author URI: #
+Description: MPhone Landing Page
+Version: 1.0.0
+Text Domain: mp
+Domain Path: /languages/
+Tags: mphone, mobiphone, html5, css3, responsive, template, framework, landing
+License: GNU General Public License v3.0
+License URI: license.txt
+*/
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "base/global";
+@import "base/grid";
+@import "base/elements";
+
+@import "vendors/bootstrap";
+
+@import "components/blocks";
+@import "components/navigations";
+@import "components/modal";
+@import "components/misc";
+
+@import "layout/header";
+@import "layout/pages";
+@import "layout/footer";

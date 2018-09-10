@@ -1,0 +1,47 @@
+/**
+ * Header
+ * -------------------------------------------------- */
+
+header.site-header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  .mp-header-top {
+
+  }
+
+  .mp-header-main {
+    padding: 1.125rem 0; /* 32px 0 */
+
+    &--left,
+    &--right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--left {
+      justify-content: flex-start;
+    }
+
+    &--right {
+      justify-content: flex-end;
+    }
+  }
+
+  .mp-header-bottom {
+
+  }
+
+  /* Sticky Navigation */
+
+  &.sticky {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    transition: top 300ms ease-in-out;
+  }
+}

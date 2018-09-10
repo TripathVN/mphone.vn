@@ -1,0 +1,78 @@
+{
+  "name": "mphone-landing-page",
+  "description": "MPhone Landing Page",
+  "version": "1.0.0",
+  "keywords": [
+    "mphone",
+    "mobiphone",
+    "html5",
+    "css3",
+    "responsive",
+    "template",
+    "framework",
+    "landing"
+  ],
+  "homepage": "#",
+  "author": "Tripath Vietnam",
+  "contributors": [
+    "Tripath Vietnam"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "license": "GPL-3.0+",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "aos": "^2.2.0",
+    "autoprefixer": "^7.1.6",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.1.1",
+    "browser-sync": "^2.24.4",
+    "fullpage.js": "^3.0.2",
+    "gsap": "^1.20.3",
+    "imagemin-cli": "^3.0.0",
+    "imagesloaded": "^4.1.3",
+    "imports-loader": "^0.7.1",
+    "jquery": "^3.2.1",
+    "jshint": "^2.9.5",
+    "lazysizes": "^4.0.0",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "onchange": "^3.2.1",
+    "popper.js": "^1.12.3",
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2",
+    "scrollmagic": "^2.0.5",
+    "slick-carousel": "^1.8.1",
+    "smoothscroll-for-websites": "^1.4.6",
+    "webpack": "^3.8.1"
+  },
+  "scripts": {
+    "clean": "rimraf build/{css/*,js/*,images/*}",
+    "autoprefixer": "postcss -u autoprefixer -r build/css/*",
+    "scss": "node-sass --output-style compressed -o build/css scss/styles.scss",
+    "webpack": "webpack",
+    "imagemin": "imagemin images/* -o build/images",
+    "serve": "browser-sync start --server --files \"build/css/*.css, build/js/*.js, build/images/*.jpg, **/*.html, !node_modules/**/*.html\"",
+    "build:css": "run-s scss autoprefixer",
+    "build:js": "webpack",
+    "build:images": "run-s imagemin",
+    "build": "run-s build:*",
+    "watch:css": "onchange \"scss\" -- run-s build:css",
+    "watch:js": "onchange \"js/*.js\" -- run-s build:js",
+    "watch:images": "onchange \"images\" -- run-s build:images",
+    "watch": "run-p serve watch:*",
+    "start": "run-s build watch"
+  }
+}
