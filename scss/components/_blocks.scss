@@ -179,8 +179,9 @@
         background: transparent !important;
         font-size: 16px;
         font-weight: 100;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.5) !important;
         position: relative;
+        transition: color 250ms ease;
 
         &:before {
           content: "";
@@ -198,12 +199,19 @@
         &.active {
           background: transparent !important;
           font-weight: 700;
-          color: $white;
+          color: $white !important;
 
           &:before {
             background-color: rgba(255, 255, 255, 0.2);
             border: 1px solid rgba(255, 255, 255, 0.2);
           }
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $white !important;
+          text-decoration: none !important;
         }
       }
     }
