@@ -261,10 +261,10 @@
                                                 });
 
                                                 let stores = {
-                                                        "type": "StoreLocator",
+                                                        "type": "FeatureCollection",
                                                         "features": [
                                                             {
-                                                                "type": "Store",
+                                                                "type": "Feature",
                                                                 "geometry": {
                                                                     "type": "Point",
                                                                     "coordinates": [
@@ -283,7 +283,7 @@
                                                                 }
                                                             },
                                                             {
-                                                                "type": "Store",
+                                                                "type": "Feature",
                                                                 "geometry": {
                                                                     "type": "Point",
                                                                     "coordinates": [
@@ -302,7 +302,7 @@
                                                                 }
                                                             },
                                                             {
-                                                                "type": "Store",
+                                                                "type": "Feature",
                                                                 "geometry": {
                                                                     "type": "Point",
                                                                     "coordinates": [
@@ -321,7 +321,7 @@
                                                                 }
                                                             },
                                                             {
-                                                                "type": "Store",
+                                                                "type": "Feature",
                                                                 "geometry": {
                                                                     "type": "Point",
                                                                     "coordinates": [
@@ -340,7 +340,7 @@
                                                                 }
                                                             },
                                                             {
-                                                                "type": "Store",
+                                                                "type": "Feature",
                                                                 "geometry": {
                                                                     "type": "Point",
                                                                     "coordinates": [
@@ -385,9 +385,9 @@
                                                         let clickedPoint = features[0];
                                                         flyToStore(clickedPoint);
                                                         createPopUp(clickedPoint);
-                                                        let activeItem = document.getElementsByClassName('active');
+                                                        let activeItem = document.getElementsByClassName('activeItem');
                                                         if (activeItem[0]) {
-                                                            activeItem[0].classList.remove('active');
+                                                            activeItem[0].classList.remove('activeItem');
                                                         }
                                                         let selectedFeature = clickedPoint.properties.address;
                                                         for (let i = 0; i < stores.features.length; i++) {
@@ -396,7 +396,7 @@
                                                             }
                                                         }
                                                         let listing = document.getElementById('listing-' + selectedFeatureIndex);
-                                                        listing.classList.add('active');
+                                                        listing.classList.add('activeItem');
                                                     }
                                                 });
 
@@ -442,13 +442,13 @@
                                                             flyToStore(clickedListing);
                                                             createPopUp(clickedListing);
 
-                                                            let activeItem = document.getElementsByClassName('active');
+                                                            let activeItem = document.getElementsByClassName('activeItem');
 
                                                             if (activeItem[0]) {
-                                                                activeItem[0].classList.remove('active');
+                                                                activeItem[0].classList.remove('activeItem');
                                                             }
 
-                                                            this.parentNode.classList.add('active');
+                                                            this.parentNode.classList.add('activeItem');
                                                         });
                                                     }
                                                 }
@@ -463,7 +463,7 @@
                                                         .addTo(map);
 
                                                     el.addEventListener('click', function(e) {
-                                                        let activeItem = document.getElementsByClassName('active');
+                                                        let activeItem = document.getElementsByClassName('activeItem');
 
                                                         flyToStore(marker);
 
@@ -472,11 +472,11 @@
                                                         e.stopPropagation();
 
                                                         if (activeItem[0]) {
-                                                            activeItem[0].classList.remove('active');
+                                                            activeItem[0].classList.remove('activeItem');
                                                         }
                                                         let listing = document.getElementById('listing-' + i);
                                                         console.log(listing);
-                                                        listing.classList.add('active');
+                                                        listing.classList.add('activeItem');
                                                     });
                                                 });
                                             </script>
