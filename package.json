@@ -27,7 +27,9 @@
   "license": "GPL-3.0+",
   "dependencies": {
     "jquery": "^3.2.1",
-    "npm": "^6.4.1"
+    "jsonp": "^0.2.1",
+    "npm": "^6.4.1",
+    "store-locator": "^1.0.3"
   },
   "devDependencies": {
     "aos": "^2.2.0",

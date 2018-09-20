@@ -44,6 +44,9 @@
     <link rel="stylesheet" href="vendors/aos/aos.css" type='text/css' media='all'/>
     <link rel="stylesheet" href="vendors/fullpagejs/fullpage.min.css" type='text/css' media='all'/>
     <link rel="stylesheet" href="build/css/styles.css" type='text/css' media='all'/>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'/>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
 </head>
@@ -91,7 +94,7 @@
                                     <div class="row">
                                         <div class="col-12 text-center">
                                             <div class="mp-section-welcome__title">
-                                                <h1 class="title">Smartphone được <br /> phân phối chính thức bởi MobiFone</h1>
+                                                <h1 class="title">Smartphone được <br/> phân phối chính thức bởi MobiFone</h1>
                                             </div>
                                         </div>
                                     </div>
@@ -134,7 +137,7 @@
                                     <div class="row">
                                         <div class="col-12 text-center" style="z-index: 99" data-aos="fade-down" data-aos-duration="850">
                                             <div class="mp-section-camera__title">
-                                                <h1 class="title" style="font-size: 44px; line-height: 1.3;">Camera kép ở sau <br />13MP và 5MP</h1>
+                                                <h1 class="title" style="font-size: 44px; line-height: 1.3;">Camera kép ở sau <br/>13MP và 5MP</h1>
                                             </div>
                                             <figure class="mp-section-camera__thumbnail" data-aos="fade-up" data-aos-duration="850">
                                                 <img src="images/camera-capture.png" alt="Camera">
@@ -207,7 +210,7 @@
                                             <ul class="mp-section-specs__group">
                                                 <li class="mp-section-specs__box" data-aos="fade-left" data-aos-delay="300">
                                                     <h6 class="title">CPU</h6>
-                                                    <p class="summary">Octa Core 1.5 GHz, 4G LTE</p>
+                                                    <p class="summary">Octa Core 1.5 GHz</p>
                                                 </li>
                                                 <li class="mp-section-specs__box" data-aos="fade-left" data-aos-delay="450">
                                                     <h6 class="title">OS</h6>
@@ -225,10 +228,258 @@
                             </section><!--specification-block-->
 
                             <section id="mp-section-store" class="mp-section-store mp-block section">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-12 text-center">
-                                            <h1 class="title">Các cửa hàng MobiFone cung cấp</h1>
+                                <div class="container-fluid mp-no-padding">
+                                    <div class="row no-gutters">
+
+                                        <div class="col-12 text-center" style="margin-bottom: 33px">
+                                            <h3 class="title">Các cửa hàng MobiFone cung cấp</h3>
+                                        </div>
+
+                                        <div class="col-12 col-sm-3">
+                                            <div class='sidebar'>
+                                                <div id='listings' class='listings'></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-9 h-100">
+                                            <div id="map" style="width: 100%; height: 550px;"></div>
+                                            <script>
+                                                if (!('remove' in Element.prototype)) {
+                                                    Element.prototype.remove = function() {
+                                                        if (this.parentNode) {
+                                                            this.parentNode.removeChild(this);
+                                                        }
+                                                    };
+                                                }
+
+                                                mapboxgl.accessToken = 'pk.eyJ1IjoiZHR1eCIsImEiOiJjam1hMnA2c3owYncwM3FsaHB1OHV3NzBpIn0.Ljr5wiYSVkgzWzn88Yc_ow';
+
+                                                let map = new mapboxgl.Map({
+                                                    container: 'map',
+                                                    style: 'mapbox://styles/mapbox/dark-v9',
+                                                    center: [105.812459, 21.032458],
+                                                    zoom: 14
+                                                });
+
+                                                let stores = {
+                                                        "type": "StoreLocator",
+                                                        "features": [
+                                                            {
+                                                                "type": "Store",
+                                                                "geometry": {
+                                                                    "type": "Point",
+                                                                    "coordinates": [
+                                                                        105.812459,
+                                                                        21.032458
+                                                                    ]
+                                                                },
+                                                                "properties": {
+                                                                    "phoneFormatted": "(00) 000-0000",
+                                                                    "phone": "000000000",
+                                                                    "address": "Lotte Center",
+                                                                    "city": "Số 54 Liễu Giai",
+                                                                    "country": "Việt Nam",
+                                                                    "postalCode": "100000",
+                                                                    "district": "Ba Đình"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Store",
+                                                                "geometry": {
+                                                                    "type": "Point",
+                                                                    "coordinates": [
+                                                                        105.815581,
+                                                                        21.003663
+                                                                    ]
+                                                                },
+                                                                "properties": {
+                                                                    "phoneFormatted": "(00) 000-0000",
+                                                                    "phone": "000000000",
+                                                                    "address": "Royal City Vincom Mega Mall",
+                                                                    "city": "Ngách 190/7, Khu đô thị Royal City",
+                                                                    "country": "Việt Nam",
+                                                                    "postalCode": "100000",
+                                                                    "district": "Thanh Xuân"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Store",
+                                                                "geometry": {
+                                                                    "type": "Point",
+                                                                    "coordinates": [
+                                                                        105.868081,
+                                                                        20.995127
+                                                                    ]
+                                                                },
+                                                                "properties": {
+                                                                    "phoneFormatted": "(00) 000-0000",
+                                                                    "phone": "000000000",
+                                                                    "address": "Times City Vincom Mega Mall",
+                                                                    "city": "458 Phố Minh Khai, Khu đô thị Times City",
+                                                                    "country": "Việt Nam",
+                                                                    "postalCode": "100000",
+                                                                    "district": "Hai Bà Trưng"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Store",
+                                                                "geometry": {
+                                                                    "type": "Point",
+                                                                    "coordinates": [
+                                                                        105.783806,
+                                                                        21.017232
+                                                                    ]
+                                                                },
+                                                                "properties": {
+                                                                    "phoneFormatted": "(00) 000-0000",
+                                                                    "phone": "000000000",
+                                                                    "address": "Keangnam Landmark Tower 72",
+                                                                    "city": "Phạm Hùng, Mễ Trì, Từ Liêm",
+                                                                    "country": "Việt Nam",
+                                                                    "postalCode": "100000",
+                                                                    "district": "Từ Liêm"
+                                                                }
+                                                            },
+                                                            {
+                                                                "type": "Store",
+                                                                "geometry": {
+                                                                    "type": "Point",
+                                                                    "coordinates": [
+                                                                        105.815131,
+                                                                        21.016352
+                                                                    ]
+                                                                },
+                                                                "properties": {
+                                                                    "phoneFormatted": "(00) 000-0000",
+                                                                    "phone": "000000000",
+                                                                    "address": "VPBank Tower",
+                                                                    "city": "89 Láng Hạ",
+                                                                    "country": "Việt Nam",
+                                                                    "postalCode": "100000",
+                                                                    "district": "Đống Đa"
+                                                                }
+                                                            }
+                                                        ]
+                                                    };
+
+                                                map.on('load', function(e) {
+                                                    // Add the data to your map as a layer
+                                                    map.addLayer({
+                                                        id: 'locations',
+                                                        type: 'symbol',
+                                                        // Add a GeoJSON source containing place coordinates and information.
+                                                        source: {
+                                                            type: 'geojson',
+                                                            data: stores
+                                                        },
+                                                        layout: {
+                                                            'icon-image': 'restaurant-15',
+                                                            'icon-allow-overlap': true,
+                                                        }
+                                                    });
+                                                    buildLocationList(stores);
+                                                });
+
+                                                map.on('click', function(e) {
+                                                    let features = map.queryRenderedFeatures(e.point, { layers: ['locations'] });
+                                                    if (features.length) {
+                                                        let clickedPoint = features[0];
+                                                        flyToStore(clickedPoint);
+                                                        createPopUp(clickedPoint);
+                                                        let activeItem = document.getElementsByClassName('active');
+                                                        if (activeItem[0]) {
+                                                            activeItem[0].classList.remove('active');
+                                                        }
+                                                        let selectedFeature = clickedPoint.properties.address;
+                                                        for (let i = 0; i < stores.features.length; i++) {
+                                                            if (stores.features[i].properties.address === selectedFeature) {
+                                                                selectedFeatureIndex = i;
+                                                            }
+                                                        }
+                                                        let listing = document.getElementById('listing-' + selectedFeatureIndex);
+                                                        listing.classList.add('active');
+                                                    }
+                                                });
+
+                                                function flyToStore(currentFeature) {
+                                                    map.flyTo({
+                                                        center: currentFeature.geometry.coordinates,
+                                                        zoom: 15
+                                                    });
+                                                }
+
+                                                function createPopUp(currentFeature) {
+                                                    let popUps = document.getElementsByClassName('mapboxgl-popup');
+                                                    if (popUps[0]) popUps[0].remove();
+
+                                                    let popup = new mapboxgl.Popup({ closeOnClick: false })
+                                                        .setLngLat(currentFeature.geometry.coordinates)
+                                                        .setHTML('<h3>MobiFone Store</h3>' +
+                                                            '<h4>' + currentFeature.properties.address + '</h4>')
+                                                        .addTo(map);
+                                                }
+
+                                                function buildLocationList(data) {
+                                                    for (i = 0; i < data.features.length; i++) {
+                                                        let currentFeature = data.features[i];
+                                                        let prop = currentFeature.properties;
+                                                        let listings = document.getElementById('listings');
+                                                        let listing = listings.appendChild(document.createElement('div'));
+                                                        listing.className = 'item';
+                                                        listing.id = 'listing-' + i;
+                                                        let link = listing.appendChild(document.createElement('a'));
+                                                        link.href = '#/';
+                                                        link.className = 'title';
+                                                        link.dataPosition = i;
+                                                        link.innerHTML = prop.address;
+                                                        let details = listing.appendChild(document.createElement('p'));
+                                                        details.innerHTML = prop.city;
+                                                        if (prop.phone) {
+                                                            details.innerHTML += ' &middot; ' + prop.phoneFormatted;
+                                                        }
+
+                                                        link.addEventListener('click', function(e) {
+                                                            let clickedListing = data.features[this.dataPosition];
+                                                            flyToStore(clickedListing);
+                                                            createPopUp(clickedListing);
+
+                                                            let activeItem = document.getElementsByClassName('active');
+
+                                                            if (activeItem[0]) {
+                                                                activeItem[0].classList.remove('active');
+                                                            }
+
+                                                            this.parentNode.classList.add('active');
+                                                        });
+                                                    }
+                                                }
+
+                                                stores.features.forEach(function(marker) {
+                                                    let el = document.createElement('div');
+
+                                                    el.className = 'marker';
+
+                                                    new mapboxgl.Marker(el, { offset: [0, -23] })
+                                                        .setLngLat(marker.geometry.coordinates)
+                                                        .addTo(map);
+
+                                                    el.addEventListener('click', function(e) {
+                                                        let activeItem = document.getElementsByClassName('active');
+
+                                                        flyToStore(marker);
+
+                                                        createPopUp(marker);
+
+                                                        e.stopPropagation();
+
+                                                        if (activeItem[0]) {
+                                                            activeItem[0].classList.remove('active');
+                                                        }
+                                                        let listing = document.getElementById('listing-' + i);
+                                                        console.log(listing);
+                                                        listing.classList.add('active');
+                                                    });
+                                                });
+                                            </script>
                                         </div>
                                     </div>
                                 </div>

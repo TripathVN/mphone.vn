@@ -10,9 +10,11 @@ import AOS from 'aos';
 
 const OM = {};
 
-OM.aos = function() {
+OM.aos = function () {
     AOS.init();
-    $('[data-aos]').each(function(){ $(this).addClass("aos-init"); });
+    $('[data-aos]').each(function () {
+        $(this).addClass("aos-init");
+    });
 };
 
 OM.fullpage = function () {
@@ -21,23 +23,23 @@ OM.fullpage = function () {
         dragAndMove: false,
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         scrollBar: true,
-        onLeave: function(){
-            $('.section [data-aos]').each(function(){
+        onLeave: function () {
+            $('.section [data-aos]').each(function () {
                 $(this).removeClass("aos-animate")
             });
         },
-        onSlideLeave: function(){
-            $('.slide [data-aos]').each(function(){
+        onSlideLeave: function () {
+            $('.slide [data-aos]').each(function () {
                 $(this).removeClass("aos-animate")
             });
         },
-        afterSlideLoad: function(){
-            $('.slide.active [data-aos]').each(function(){
+        afterSlideLoad: function () {
+            $('.slide.active [data-aos]').each(function () {
                 $(this).addClass("aos-animate")
             });
         },
-        afterLoad: function(){
-            $('.section.active [data-aos]').each(function(){
+        afterLoad: function () {
+            $('.section.active [data-aos]').each(function () {
                 $(this).addClass("aos-animate")
             });
         }

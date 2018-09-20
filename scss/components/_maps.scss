@@ -1,0 +1,107 @@
+.mp-section-store {
+  .sidebar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+  }
+
+  .listings {
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 60px;
+
+    .item {
+      display: block;
+      padding: 0 10px 5px 10px;
+      text-decoration: none;
+
+      a {
+        font-size: 18px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .title {
+        display: block;
+        color: $white;
+
+        small {
+          font-weight: 400;
+        }
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+
+      }
+
+      &.active {
+
+      }
+    }
+  }
+
+  .mapboxgl-canvas {
+    height: 100%;
+  }
+
+  .mapboxgl-popup-close-button {
+    display: none;
+  }
+
+  .mapboxgl-popup-content-wrapper {
+  }
+
+  .mapboxgl-popup-content {
+    background: $black;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: center;
+
+    h3 {
+      display: block;
+      margin: 0;
+      padding: 10px;
+      border-radius: 5px;
+      line-height: 1;
+      font-size: 18px;
+      font-weight: 700;
+      color: $white;
+    }
+
+    h4 {
+      display: block;
+      margin: 0;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1;
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  .mapboxgl-popup-tip {
+    border-top-color: $black !important;
+  }
+
+  .mapboxgl-container .leaflet-marker-icon {
+    cursor: pointer;
+  }
+
+  .marker {
+    border: none;
+    cursor: pointer;
+    height: 56px;
+    width: 56px;
+    background-image: url(marker.png);
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+
