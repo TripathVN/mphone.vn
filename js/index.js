@@ -11,7 +11,9 @@ import AOS from 'aos';
 const OM = {};
 
 OM.aos = function () {
-    AOS.init();
+    AOS.init({
+        once: true,
+    });
     $('[data-aos]').each(function () {
         $(this).addClass("aos-init");
     });
