@@ -21,10 +21,13 @@ OM.aos = function () {
 
 OM.fullpage = function () {
     new FullPage('#fullpage', {
+        scrollOverflow: true,
         scrollOverflowOptions: {disablePointer: true},
-        dragAndMove: false,
+        dragAndMove: true,
+        lazyLoading: true,
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         scrollBar: true,
+        responsiveWidth: 1200,
         onLeave: function () {
             $('.section [data-aos]').each(function () {
                 $(this).removeClass("aos-animate")
