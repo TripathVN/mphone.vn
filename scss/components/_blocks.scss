@@ -72,6 +72,7 @@
     align-items: center;
 
     @media (max-width: 1024px) {
+      display: block;
       flex-direction: column;
       align-items: stretch;
     }
@@ -301,6 +302,10 @@
       font-size: 32px;
       font-weight: 100;
       color: $white;
+
+      @media (max-width: 1024px) {
+        top: 150%;
+      }
     }
   }
 
@@ -371,5 +376,9 @@
   .title {
     font-size: 44px;
     font-weight: 100;
+
+    @media (max-width: 572px) {
+      font-size: 32px;
+    }
   }
 }
