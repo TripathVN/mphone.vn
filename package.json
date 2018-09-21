@@ -76,6 +76,7 @@
     "watch:js": "onchange \"js/*.js\" -- run-s build:js",
     "watch:images": "onchange \"images\" -- run-s build:images",
     "watch": "run-p serve watch:*",
-    "start": "run-s build watch"
+    "start": "run-s build watch",
+    "help": "browser-sync -h"
   }
 }
