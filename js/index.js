@@ -24,14 +24,11 @@ OM.aos = function () {
 
 OM.fullpage = function () {
     new FullPage('#fullpage', {
-        scrollOverflow: true,
         scrollOverflowOptions: {disablePointer: true},
-        dragAndMove: true,
         lazyLoading: true,
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         scrollBar: true,
         responsiveWidth: 1200,
-        responsiveSlides: true,
         onLeave: function () {
             if ($(window).width() > 1200) {
                 $('.section [data-aos]').each(function () {
