@@ -111,6 +111,12 @@
     background-color: rgba(0, 0, 0, 0);
     pointer-events: none;
   }
+
+  #map {
+    @media (max-width: 992px) {
+      height: 400px !important;
+    }
+  }
 }
 
 
