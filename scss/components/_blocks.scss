@@ -23,6 +23,11 @@
   background-size: 30%;
   background-repeat: no-repeat;
 
+  @media (max-width: 1440px) {
+    background-size: 45%;
+    height: 100vh !important;
+  }
+
   @media (max-width: 1200px) {
     padding: 500px 0 200px 0;
     background-size: 45%;
@@ -30,8 +35,8 @@
   }
 
   @media (max-width: 1024px) {
-    padding: 400px 0 100px 0;
-    background-size: 45%;
+    padding: 600px 0 50px 0;
+    background-size: 40%;
     height: 100vh !important;
   }
 
@@ -40,8 +45,13 @@
   }
 
   @media (max-width: 572px) {
-    padding: 350px 0 50px 0;
+    padding: 410px 0 50px 0;
     background-size: 80%;
+  }
+
+  @media (max-width: 320px) {
+    padding: 250px 0 100px 0;
+    background-size: 90%;
   }
 
   .fp-tableCell {
@@ -354,7 +364,6 @@
 
   ul {
     display: flex;
-    flex-direction: row;
     flex-direction: column;
     margin: 0;
     padding: 0;
