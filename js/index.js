@@ -28,6 +28,7 @@ OM.fullpage = function () {
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
         scrollBar: true,
         responsiveWidth: 1200,
+        responsiveSlides: true,
         onLeave: function () {
             $('.section [data-aos]').each(function () {
                 $(this).removeClass("aos-animate")
