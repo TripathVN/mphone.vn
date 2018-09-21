@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="05a13f1d-1130-4c35-a944-43958cdb64b6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/build/css/styles.css" afterPath="$PROJECT_DIR$/build/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_blocks.scss" afterPath="$PROJECT_DIR$/scss/components/_blocks.scss" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_maps.scss" afterPath="$PROJECT_DIR$/scss/components/_maps.scss" />
+      <change beforePath="$PROJECT_DIR$/build/js/index.js" afterPath="$PROJECT_DIR$/build/js/index.js" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,14 +15,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4563492">
+    <splitter split-orientation="horizontal" split-proportion="0.5185185">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="497" column="17" lean-forward="true" selection-start-line="497" selection-start-column="17" selection-end-line="497" selection-end-column="17" />
+                <state relative-caret-position="379">
+                  <caret line="499" column="0" lean-forward="true" selection-start-line="499" selection-start-column="0" selection-end-line="499" selection-end-column="0" />
                   <folding>
                     <element signature="n#section#0;n#section#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                     <element signature="n#section#1;n#section#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -46,17 +45,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+                <state relative-caret-position="323">
+                  <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
                   <folding>
                     <element signature="e#15#34#0" expanded="true" />
-                    <element signature="e#700#834#0" expanded="false" />
-                    <element signature="e#870#1002#0" expanded="false" />
-                    <element signature="e#1040#1176#0" expanded="false" />
-                    <element signature="e#1209#1347#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -143,7 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>images</find>
       <find>color-img</find>
       <find>mp-section-color</find>
       <find>let</find>
@@ -173,6 +167,7 @@
       <find>overview</find>
       <find>552</find>
       <find>44px</find>
+      <find>mp-header</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;mp-</replace>
@@ -213,12 +208,12 @@
         <option value="$PROJECT_DIR$/scss/components/_parallax.scss" />
         <option value="$PROJECT_DIR$/scss/styles.scss" />
         <option value="$PROJECT_DIR$/scss/components/_misc.scss" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/scss/layout/_header.scss" />
         <option value="$PROJECT_DIR$/scss/layout/_pages.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/components/_blocks.scss" />
         <option value="$PROJECT_DIR$/scss/components/_maps.scss" />
+        <option value="$PROJECT_DIR$/js/index.js" />
       </list>
     </option>
   </component>
@@ -337,7 +332,7 @@
       <workItem from="1536631938155" duration="1277000" />
       <workItem from="1536634883204" duration="999000" />
       <workItem from="1537166943617" duration="8991000" />
-      <workItem from="1537412650959" duration="31635000" />
+      <workItem from="1537412650959" duration="33873000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commits">
       <created>1536135295734</created>
@@ -451,11 +446,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537510590991</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fix some bugs">
+      <created>1537511968084</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1537511968084</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101420000" />
+    <option name="totallyTimeSpent" value="103658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -896,20 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding>
-            <element signature="e#15#34#0" expanded="true" />
-            <element signature="e#700#834#0" expanded="false" />
-            <element signature="e#870#1002#0" expanded="false" />
-            <element signature="e#1040#1176#0" expanded="false" />
-            <element signature="e#1209#1347#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/layout/_pages.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -997,8 +985,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="497" column="17" lean-forward="true" selection-start-line="497" selection-start-column="17" selection-end-line="497" selection-end-column="17" />
+        <state relative-caret-position="379">
+          <caret line="499" column="0" lean-forward="true" selection-start-line="499" selection-start-column="0" selection-end-line="499" selection-end-column="0" />
           <folding>
             <element signature="n#section#0;n#section#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#section#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1016,6 +1004,16 @@
             <element signature="e#16902#25076#0" expanded="false" />
             <element signature="e#25154#26347#0" expanded="false" />
             <element signature="e#25312#26216#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="e#15#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
