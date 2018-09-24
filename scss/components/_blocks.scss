@@ -210,12 +210,14 @@
   }
 }
 
+
 /* Color Section */
 .mp-section-color {
-  background-image: url("../../images/color-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: $white;
+  //background-image: url("../../images/color-bg.jpg");
+  //background-position: center center;
+  //background-size: cover;
+  //background-repeat: no-repeat;
 
   @media (max-width: 1200px) {
     padding: 80px 0;
@@ -268,7 +270,7 @@
         background: transparent !important;
         font-size: 16px;
         font-weight: 100;
-        color: rgba(255, 255, 255, 0.5) !important;
+        color: rgba(0, 0, 0, 0.5) !important;
         position: relative;
         transition: color 250ms ease;
 
@@ -288,26 +290,43 @@
         &.active {
           background: transparent !important;
           font-weight: 700;
-          color: $white !important;
+          color: $black !important;
 
           &:before {
-            background-color: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(0, 0, 0, 0.2);
           }
         }
 
         &:hover,
         &:active,
         &:focus {
-          color: $white !important;
+          color: $black !important;
           text-decoration: none !important;
         }
+      }
+    }
+  }
+
+  #pills-black {
+    .mp-section-color__image {
+      img {
+
+      }
+    }
+  }
+
+  #pills-blue {
+    .mp-section-color__image {
+      img {
+        margin: 0;
       }
     }
   }
 }
 
 /* Design Section */
+
 .mp-section-design {
   @media (max-width: 1200px) {
     padding: 80px 0;
@@ -315,19 +334,28 @@
 
   &__image {
     position: relative;
+    display: inline-block;
+    margin: 0 auto;
+
+    img {
+      display: block;
+      float: right;
+      clear: right;
+    }
 
     &:after {
       content: "8.0mm";
       position: absolute;
       top: 50%;
-      right: 0;
+      right: -90px;
       transform: translateY(-50%);
       font-size: 32px;
       font-weight: 100;
       color: $white;
 
       @media (max-width: 1024px) {
-        top: 150%;
+        right: 0;
+        top: 120%;
       }
     }
   }
