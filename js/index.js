@@ -1,10 +1,16 @@
-'use strict';
+import 'bootstrap/scss/bootstrap.scss'
+import 'bootstrap/scss/bootstrap-reboot.scss'
+import 'aos/src/sass/aos.scss'
+import 'fullpage.js/dist/fullpage.css'
+import '../scss/styles.scss'
+
 
 import 'bootstrap';
 
-import FullPage from 'fullpage.js';
+import $ from 'jquery';
+import 'fullpage.js/vendors/scrolloverflow';
+import FullPage from 'fullpage.js/dist/fullpage';
 
-import './../node_modules/fullpage.js/vendors/scrolloverflow.js';
 
 import AOS from 'aos';
 
