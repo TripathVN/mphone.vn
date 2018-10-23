@@ -6,6 +6,8 @@ node_js:
 install:
 - npm i -g yarn && yarn
 
+script: 'true'
+
 before_script:
 - yarn build
 
