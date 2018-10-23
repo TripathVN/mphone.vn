@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05a13f1d-1130-4c35-a944-43958cdb64b6" name="Default" comment="Fix some bugs">
-      <change afterPath="$PROJECT_DIR$/config/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="05a13f1d-1130-4c35-a944-43958cdb64b6" name="Default" comment="- Cleanup vendor, packages.json&#10;- Update webpack&#10;- Optimize webpack">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon-114x114.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon-114x114.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon-120x120.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon-120x120.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon-144x144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon-57x57.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon-57x57.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon-60x60.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon-60x60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon-72x72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon-76x76.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon-76x76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon-precomposed.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon-precomposed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/apple-touch-icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-96x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icons/favicon-96x96.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/aos/aos.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/aos/aos.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/fullpagejs/fullpage.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendors/fullpagejs/fullpage.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
     </list>
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,16 +39,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="CNAME" value="1" />
+          <entry key="LICENSE" value="1" />
           <entry key="css" value="5" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="html" value="7" />
           <entry key="jpg" value="1" />
           <entry key="js" value="27" />
           <entry key="json" value="9" />
           <entry key="lock" value="2" />
-          <entry key="md" value="1" />
+          <entry key="log" value="1" />
+          <entry key="md" value="2" />
           <entry key="png" value="1" />
           <entry key="scss" value="5" />
+          <entry key="txt" value="2" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -66,9 +63,10 @@
           <entry key="Image" value="2" />
           <entry key="JSON" value="9" />
           <entry key="JavaScript" value="27" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Markdown" value="2" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="SCSS" value="5" />
+          <entry key="YAML" value="1" />
           <entry key="yarn.lock" value="2" />
         </counts>
       </usages-collector>
@@ -80,7 +78,7 @@
           <entry key="json" value="58" />
           <entry key="lock" value="9" />
           <entry key="scss" value="44" />
-          <entry key="txt" value="21" />
+          <entry key="txt" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -88,7 +86,7 @@
           <entry key="HTML" value="26" />
           <entry key="JSON" value="58" />
           <entry key="JavaScript" value="532" />
-          <entry key="PLAIN_TEXT" value="48" />
+          <entry key="PLAIN_TEXT" value="138" />
           <entry key="SCSS" value="44" />
           <entry key="yarn.lock" value="9" />
         </counts>
@@ -103,54 +101,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="36" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/components/_blocks.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="373" column="38" selection-start-line="373" selection-start-column="38" selection-end-line="373" selection-end-column="50" />
-              <folding>
-                <element signature="e#2341#2585#0" />
-                <element signature="e#2602#2644#0" />
-                <element signature="e#2665#2727#0" />
-                <element signature="e#2742#2831#0" />
-                <element signature="e#2848#2934#0" />
-                <element signature="e#3461#3653#0" />
-                <element signature="e#3666#3736#0" />
-                <element signature="e#3763#3828#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -294,10 +245,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/icons" />
       <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
@@ -445,7 +397,7 @@
       <workItem from="1537166943617" duration="8991000" />
       <workItem from="1537412650959" duration="40310000" />
       <workItem from="1540191812693" duration="7361000" />
-      <workItem from="1540272189693" duration="4469000" />
+      <workItem from="1540272189693" duration="5172000" />
     </task>
     <task id="LOCAL-00001" summary="Init Commits">
       <created>1536135295734</created>
@@ -622,15 +574,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540285283163</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="- Cleanup vendor, packages.json&#10;- Update webpack&#10;- Optimize webpack">
+      <created>1540288019285</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1540288019285</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124177000" />
+    <option name="totallyTimeSpent" value="124880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.43061516" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -638,7 +596,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32908162" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -685,16 +643,15 @@
     <MESSAGE value="Update some Responsive" />
     <MESSAGE value="Fix some bugs" />
     <MESSAGE value="Clean up .idea, build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up .idea, build" />
+    <MESSAGE value="- Cleanup vendor, packages.json&#10;- Update webpack&#10;- Optimize webpack" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Cleanup vendor, packages.json&#10;- Update webpack&#10;- Optimize webpack" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/slick.js" />
-    <entry file="file://$PROJECT_DIR$/js/shuffle.js" />
     <entry file="file://$PROJECT_DIR$/scss/components/_service-boxes.scss" />
     <entry file="file://$PROJECT_DIR$/js/scrollmagic.js" />
     <entry file="file://$PROJECT_DIR$/scss/components/_parallax.scss" />
     <entry file="file://$PROJECT_DIR$/scss/vendors/_scrollmagic.scss" />
-    <entry file="file://$PROJECT_DIR$/favicon-96x96.png">
+    <entry file="file://$PROJECT_DIR$/images/icons/favicon-96x96.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vendors/fullpagejs/fullpage.min.css" />
@@ -821,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fullpage.js/dist/fullpage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -897,6 +847,51 @@
     <entry file="file://$PROJECT_DIR$/images/specs-bg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="79" column="3" lean-forward="true" selection-start-line="79" selection-start-column="3" selection-end-line="79" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_blocks.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -914,24 +909,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/yarn-error.log">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/robots.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="78" column="49" selection-start-line="78" selection-start-column="49" selection-end-line="78" selection-end-column="49" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
