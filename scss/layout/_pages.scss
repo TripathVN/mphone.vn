@@ -12,29 +12,3 @@
   position: relative;
   overflow-x: hidden;
 }
-
-.mp-checkout-page {
-
-  button.btn.btn-primary {
-    background-color: #4652b8;
-    font-weight: normal;
-    border-radius: 0;
-  }
-
-  /* Site */
-  .site-content {
-    padding: 80px 0;
-  }
-
-  .mp-form-row {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-
-    &:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-  }
-}
