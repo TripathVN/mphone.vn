@@ -54,6 +54,13 @@
     background-color: $blue;
     color: $white;
   }
+
+  &.btn-custom {
+    border-radius: 0;
+    font-weight: normal;
+    background-color: $blue;
+    color: $white;
+  }
 }
 
 

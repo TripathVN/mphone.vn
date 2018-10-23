@@ -210,7 +210,6 @@
   }
 }
 
-
 /* Color Section */
 .mp-section-color {
   background-color: $white;
@@ -326,7 +325,6 @@
 }
 
 /* Design Section */
-
 .mp-section-design {
   @media (max-width: 1200px) {
     padding: 80px 0;
@@ -431,5 +429,16 @@
     @media (max-width: 572px) {
       font-size: 32px;
     }
+  }
+}
+
+/* Online Order */
+.mp-section-online {
+  &__title {
+    margin-bottom: 41px;
+  }
+
+  &__action {
+
   }
 }
