@@ -38,3 +38,51 @@
     }
   }
 }
+
+.mp-thank-you-page {
+
+  a.btn.btn-primary {
+    background-color: #4652b8;
+    font-weight: normal;
+    border-radius: 0;
+  }
+
+  /* Site */
+  .site-content {
+    padding: 80px 0;
+  }
+
+  .mp-section-thank-you {
+
+    &__top {
+
+    }
+
+    &__bottom {
+
+    }
+
+    &__title {
+      margin-top: -12px;
+    }
+
+    &__summary {
+      padding: 12px 0;
+
+      p {
+
+      }
+    }
+
+    &__action {
+      margin-top: 32px;
+    }
+
+    &__notification {
+      p {
+        font-size: 0.875rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

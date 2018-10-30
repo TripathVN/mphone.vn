@@ -59,16 +59,19 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'index.html',
+            template: 'index.html'
         }),
         new HtmlWebpackPlugin({
             filename: 'checkout.html',
-            template: 'checkout.html',
+            template: 'checkout.html'
         }),
-
+        new HtmlWebpackPlugin({
+            filename: 'thank-you.html',
+            template: 'thank-you.html'
+        }),
         new MiniCssExtractPlugin({
             filename: devMode ? '[name].css' : '[name].[hash].css',
-            chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-        }),
+            chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
+        })
     ]
 };
