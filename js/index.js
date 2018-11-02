@@ -88,7 +88,7 @@ $(document).ready(function () {
         const key = {
             access_code: 'VIDL5nGwd2T4hVSOXsa3cCqxCZOfs7FT',
             terminal_id: '10',
-            return_url: 'http://mphone.vn/thankyou.html',
+            return_url: 'http://mphone.vn/thank-you.html',
             service_type: 'BP',
             currency_code: 'VND',
             amount: '5000000',
